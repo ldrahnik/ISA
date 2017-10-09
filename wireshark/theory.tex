@@ -89,7 +89,7 @@ Alternativou k~zobrazení obsahu routovací a ARP tabulky jsou tyto příkazy:
 \end{itemize}
 
 
-K~zobrazení aktuálně běžících spojení včetně protokolu, portu, zdrojové a cílové adresy slouží příkaz \texttt{sockstat} (\texttt{ss}).
+K~zobrazení aktuálně běžících spojení včetně protokolu, portu, zdrojové a cílové adresy slouží příkaz \texttt{ss} (\texttt{sockstat}).
 
 \subsubsection{Konfigurační soubory a logy}
 Na OS Linux je veškeré nastavení systému a služeb uloženo v~adresáři \texttt{/etc}. Jednotlivé služby zde mají svůj konfigurační soubor s~příslušným názvem. Pro lepší přehlednost je možné vytvářet více konfiguračních souborů, pro tyto účely zde pak existují adresáře \texttt{"nazevsluzby.d/"} (například \texttt{/etc/rsyslog.d/}). Veškeré nastavení v~souborech v~těchto adresářích je pak aplikováno na danou službu.
@@ -199,4 +199,4 @@ Flow graph si zobrazíme pomocí \texttt{Statistics -> Flow Graph..}, zde si vyb
 \subsection{Zobrazení streamu}
 Zachycenou komunikaci vidíme v~podobě jednotlivých paketů. Pokud například zachytíme HTTP komunikaci, jeden paket nese většinou pouze část obsahu HTTP zprávy. V tomto případě můžeme pro zobrazení celé zprávy (celého streamu) použít volbu \texttt{Flow <protokol> Stream}. Zobrazení provedeme tak, že vybereme jeden zachycený paket, označíme ho a následně \texttt{Analyze -> Follow <protokol> Stream}.
 \subsection{Čas}
-V rámci zachytávání paketů nese každý záznam informaci o čase. Defaultně je zde čas zobrazen v~sekundách, od počátku zachytávání komunikace. Nicméně v~\texttt{Wiew -> Time Display Format} můžeme vybrat konkrétní zobrazení času a zjistit tak například, ve který den byl daný paket zachycen.
+V rámci zachytávání paketů nese každý záznam informaci o čase. Defaultně je zde čas zobrazen v~sekundách, od počátku zachytávání komunikace. Nicméně v~\texttt{View -> Time Display Format} můžeme vybrat konkrétní zobrazení času a zjistit tak například, ve který den byl daný paket zachycen.
